@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+body{
+    background: #ececec url(./img/agsquare.png) repeat;
+    font-size: 87.5%;
+    font-family: arial, sans-serif;
+    color: #666666;
+    line-height: 1.7em;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: #fc0c18;
+}
+
+a:hover{
+    color: #666666;
+    
+}
+
+h2{color: #fc0c18;}
+
+.clr {
+	clear: both;
+}
+
+main#container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    clear: both;
+}
+
+main header img#logo{
+    width: 40%;
+    margin: 10px 0;
+    display: block;
+    transition: width 2s;
+    
+}
+
+main header.main-header nav.main-nav{
+    background: #fc0c18;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px #c13046 solid;
+}
+
+main header.main-header nav.main-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main header.main-header nav.main-nav ul li{
+    color: white;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+}
+
+main header.main-header nav.main-nav ul li a{
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 20px;
+}
+
+main header.main-header nav.main-nav ul li a.active, ul li a:hover{
+    background: #efeadd;
+    color: #666666;
+    border-radius: 5px;
+}
+
+main div#content{
+    width: 70%;
+    float: left;
+    overflow: auto;
+    transition: width 1s;
+    
+}
+
+main div#content article{
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    
+}
+
+main div#content article header span{
+    font-style: italic;
+    color: black;
+}
+
+div#content article a.readmore{
+    display: block;
+    float: right;
+    color: white;
+    padding: 5px 9px;
+    background: #fc0c18;
+    border-radius: 5px;
+}
+
+div#content article a:hover{
+    background: black;
+}
+
+main aside#sidebar{
+    width: 30%;
+    float: left;
+}
+
+#sidebar .blocks{
+	border-radius: 5px;
+    background: white;
+    overflow: auto;
+    padding: 10px 15px;
+    margin: 10px 0 0 10px;
+    
+}
+
+main footer{
+    background: #fc0c18;
+    height: 40px;
+    border: 1px solid #882433;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+main footer p{
+    color: white;
+    margin: 0;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+/* Tablets-Geral(Portrait and Landscape) */
+@media only screen and (min-width: 768px) and (max-width: 960px){
+    main#container{
+        width: 95%;
+    }
+    
+    main header img#logo{
+        margin: auto;
+        display: block;
+        width: 65%;
+    }
+    
+    main div#content{
+        width: 100%;
+        float: none;    
+    }
+    
+    main header.main-header nav.main-nav{
+        display: block;
+        transition: height 1s;
+    }
+    
+    main aside#sidebar{
+        width: 100%;
+        float: none;    
+    }
+    
+    #sidebar .blocks{
+        margin-left: 0px;
+    }
+}
+
+/* Smaller Tablets-Geral(Portrait and Landscape) */
+@media only screen and (min-width: 569px) and (max-width: 767px){
+    main#container{
+        width: 95%;
+    }
+    
+    main header img#logo{
+        margin: auto;
+        display: block;
+        width: 60%;
+        transition: width 2s;
+    }
+    
+    main header.main-header nav.main-nav{
+    height: auto;
+    display: block;
+    overflow: hidden;
+    width: 99%;
+    transition: height 1s;
+    }
+    
+    main header.main-header nav.main-nav ul{
+        padding: 2% 1%;
+        text-align: center;
+        width: 98;
+    }
+    
+    main header.main-header nav.main-nav ul li{
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #n3293b;
+    }
+    
+    main header.main-header nav.main-nav ul li a{
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    
+    main header.main-header nav.main-nav ul li a.active, ul li a:hover{
+        display: block;
+        
+    }
+    
+    main div#content{
+        width: 100%;
+        float: none;    
+    }
+    
+    main aside#sidebar{
+        width: 100%;
+        float: none;    
+    }
+    
+    #sidebar .blocks{
+        margin-left: 0px;
+    }
+    
+}
+
+/* Smartphones-Geral(Portrait and Landscape) */
+@media only screen and (min-width: 240px) and (max-width: 568px){
+    main#container{
+        width: 95%;
+    }
+    
+    main header img#logo{
+        margin: auto;
+        display: block;
+        width: 95%;
+    }
+    
+    main header.main-header nav.main-nav{
+    height: auto;
+    display: block;
+    overflow: hidden;
+    width: 99%;
+    }
+    
+    main header.main-header nav.main-nav ul{
+        padding: 2% 1%;
+        text-align: center;
+        width: 98;
+    }
+    
+    main header.main-header nav.main-nav ul li{
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #n3293b;
+    }
+    
+    main header.main-header nav.main-nav ul li a{
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    
+    main header.main-header nav.main-nav ul li a.active, ul li a:hover{
+        display: block;
+        
+    }
+    
+    main div#content{
+        width: 100%;
+        float: none;    
+    }
+    
+    main aside#sidebar{
+        width: 100%;
+        float: none;    
+    }
+    
+    #sidebar .blocks{
+        margin-left: 0px;
+    }
+    
+}
